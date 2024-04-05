@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1 style="color: #683798">Welcome to PetFax</h1>
@@ -13,5 +14,8 @@
         </a>
         <img src="{{ pet.pet_photo }}" alt="{{ pet.pet_name }}">
     {% endfor %}
+    <div>
+        lets learn some more , got some facts <a href="/facts/new">Submit some here</a>
+    </div>
 </body>
 </html>
